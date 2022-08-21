@@ -1,8 +1,7 @@
 # J.crew_clone
 
 ### Project Description
-_Freshly is a New York-based prepared meal delivery company ,Which delivers throughout the United States Of America(USA) .
-
+J.Crew is an E-Commerce Website which helps users to buy different category of  product in  online at best prices .
 ## Tech Stack Used : -
 
 - #### Languages
