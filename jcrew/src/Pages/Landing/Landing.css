@@ -1,0 +1,32 @@
+.landing{
+    width: 100%;
+    border: 1px solid black;
+}
+.div2{
+    font-weight: bold;
+    color: rgb(95, 93, 93);
+    padding: 10px ;
+}
+.div3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.siximage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imgtag{
+    height: 800px;
+    width: 90%;
+    margin: 5%;
+    gap: 0px;
+    cursor: pointer;
+}
+.div4{
+    display: flex;
+    gap: 1%;
+    margin-left: 13%;
+    cursor: pointer;
+}

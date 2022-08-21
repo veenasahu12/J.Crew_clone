@@ -1,0 +1,74 @@
+.div2{
+    font-weight: bold;
+    color: rgb(95, 93, 93);
+    padding: 10px ;
+}
+.main-cart-div{
+    border: 1px solid honeydew;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 14%;
+}
+.emptybag{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 13%;
+}
+
+.datas-item{
+    display: flex;
+    flex-grow: 1;
+    margin-left: 2%;
+    border-bottom: 1px solid #ddd;
+}
+.imagetag{
+    height: 160px;
+    width: 170px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.item-desc{
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 3%;
+}
+.itemcount{
+    display: flex;
+    gap: 5%;
+    margin-top: 3%;
+}
+.btn{
+    margin-top: 3%;
+    margin-left: 4%;
+}
+.maindiv{
+    display: flex;
+    gap: 3%;
+}
+.box1{
+    display: flex;
+    width: 55%;
+}
+.box2{
+    border: 1px solid honeydew;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     width: 25%;
+     text-align: left;
+     padding: 2%;
+     height: 450px;
+     margin-top: 2%;
+}
+.checkoutbtn{
+    background-color: rgb(6, 6, 248);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 95%;
+    margin-left: 10px;
+    height: 50px;
+}
+.ptag{
+    color: grey;
+}

@@ -1,0 +1,61 @@
+.div2{
+    font-weight: bold;
+    color: rgb(95, 93, 93);
+    padding: 10px ;
+}
+.mapping-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.data-item{
+    border: 1px solid honeydew;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black;
+}
+.image{
+    height: 350px;
+    width: 100%;
+}
+.maindiv{
+    display: flex;
+    border: 1px solid honeydew;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.women-details-img{
+    margin-right: 40%;
+}
+.images{
+   width: 130%;
+   height: 600px; 
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.women-category1{
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    margin-left: -15%;
+    margin-top: 5%;
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+.product-menu-dropdown-div{
+    margin-left: -70%;
+    margin-bottom: 3%;
+    
+}
+.filter{
+    padding: 0.5%;
+    border: 2px solid gainsboro;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 1%;
+}
+.sizebtn{
+    padding: 0.9%;
+    border: 2px solid gainsboro;
+    font-weight: bold;
+    margin-left: 15px;
+    width: 90px;
+    margin-top: 1%;
+}
