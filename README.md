@@ -18,7 +18,7 @@ J.Crew is an E-Commerce Website which helps users to buy different category of  
 ### Snapshot :-
 <img src="https://cdn-images-1.medium.com/max/880/1*3XPWL4IHMSB96Eu7i4rVqQ.png" />
 <img src="https://cdn-images-1.medium.com/max/880/1*jhBl7MKY8UDARHVtQQPchw.png" />
-<img src="https://cdn-images-1.medium.com/max/880/1*jhBl7MKY8UDARHVtQQPchw.png" />
+<img src="https://cdn-images-1.medium.com/max/880/1*uUSUdiGxdYaKDNWj-T7SzA.png" />
 
 ### Netlify Link
 
