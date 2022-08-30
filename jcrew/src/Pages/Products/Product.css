@@ -59,3 +59,17 @@
     width: 90px;
     margin-top: 1%;
 }
+
+@media only screen and (min-width:0px) and (max-width:820px) {
+    .mapping-data {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (min-width:821px) and (max-width:600px) {
+    .mapping-data {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}

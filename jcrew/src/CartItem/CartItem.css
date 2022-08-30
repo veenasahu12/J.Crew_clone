@@ -72,3 +72,17 @@
 .ptag{
     color: grey;
 }
+
+@media only screen and (min-width:0px) and (max-width:860px) {
+    .maindiv {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (min-width:861px) and (max-width:900px) {
+    .maindiv {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}

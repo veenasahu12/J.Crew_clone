@@ -2,9 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import "./Landing.css"
 import SixImage from './SixImage'
-import Articles from './Articles'
-
-
+import { Link } from 'react-router-dom'
 
 const Landing = (props) => {
     return (
@@ -19,13 +17,11 @@ const Landing = (props) => {
             <SixImage/>
             <div className='div4'>
              <h1>Shop New Arrivals</h1>
-             <h3 style={{border:"1px solid black",padding:"1%"}}>Shop Women</h3>
-             <h3 style={{border:"1px solid black",padding:"1%"}}>Shop Men</h3>
-             <h3 style={{border:"1px solid black",padding:"1%"}}>Shop Girls</h3>
-             <h3 style={{border:"1px solid black",padding:"1%"}}>Shop Boys</h3>
+             <h3 style={{border:"1px solid black",padding:"1%"}}><Link to="./women">Shop Women</Link></h3>
+             <h3 style={{border:"1px solid black",padding:"1%"}}><Link to="./men">Shop Men</Link></h3>
+             <h3 style={{border:"1px solid black",padding:"1%"}}><Link to="./women">Shop Girls</Link></h3>
+             <h3 style={{border:"1px solid black",padding:"1%"}}><Link to="./men">Shop Boys</Link></h3>
             </div>
-            <Articles/>
-            
         </div>
     )
 }
