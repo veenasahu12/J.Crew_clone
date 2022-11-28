@@ -1,7 +1,8 @@
 # J.Crew_clone
 
 ### Project Description
-J.Crew is an E-Commerce Website which helps users to buy different category of  product in  online at best prices .
+J.Crew is an E-Commerce Website offering an assortment of Women's , Men's and Kid's apparel and Home accessories . It is an Individual Project created in 4 days .
+
 ## Tech Stack Used : -
 
 - #### Languages
