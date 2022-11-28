@@ -4,6 +4,7 @@ import axios from "axios"
 import  {useState, useEffect}  from 'react'
 import "./Product.css"
 import { Link } from 'react-router-dom'
+import Footer from '../Landing/Footer'
 
 const Women = (props) => {
 
@@ -98,6 +99,8 @@ const Women = (props) => {
                     )}
                 
            </div>
+           <br />
+           <Footer />
         </div>
     )
 }

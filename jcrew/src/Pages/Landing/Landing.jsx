@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import "./Landing.css"
 import SixImage from './SixImage'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 const Landing = (props) => {
     return (
@@ -22,6 +23,7 @@ const Landing = (props) => {
              <h3 style={{border:"1px solid black",padding:"1%"}}><Link to="./women">Shop Girls</Link></h3>
              <h3 style={{border:"1px solid black",padding:"1%"}}><Link to="./men">Shop Boys</Link></h3>
             </div>
+            <Footer />
         </div>
     )
 }

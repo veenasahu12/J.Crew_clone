@@ -3,6 +3,7 @@ import axios from "axios"
 import  {useState, useEffect}  from 'react'
 import Navbar from '../Landing/Navbar'
 import "./Product.css"
+import Footer from '../Landing/Footer'
 
 const Men = (props) => {
 
@@ -33,6 +34,8 @@ const Men = (props) => {
                     )}
                 
            </div>
+           <br />
+           <Footer />
         </div>
     )
 }

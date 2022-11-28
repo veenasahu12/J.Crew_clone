@@ -16,9 +16,6 @@ const Navbar = (props) => {
         <Link to="/" className="link">
           J.Crew
         </Link>
-        <Link to="/new" className="link">
-          New
-        </Link>
         <Link to="/women" className="link">
           Women
         </Link>
