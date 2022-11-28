@@ -22,4 +22,4 @@ J.Crew is an E-Commerce Website which helps users to buy different category of  
 
 ### Netlify Link
 
-https://luxury-babka-3b94f6.netlify.app/
+https://jcrew.netlify.app/
