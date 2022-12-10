@@ -104,6 +104,7 @@ const Men = (props) => {
               <h6>{e.new}</h6>
               <h6>{e.top_rated}</h6>
               <h6>INR {e.price}</h6>
+              <button>Add to Details</button>
             </Link>
           );
         })}
