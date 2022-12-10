@@ -44,13 +44,14 @@ const WomenDetails = (props) => {
       <div className="maindiv">
         <hr />
         <div className="women-details-img">
-          <img className="images" src={data.img_url} alt="women" />
+          <img className="image" src={data.img_url} alt="women" />
         </div>
         <div className="women-category1">
-          <h5>{data.price} USD</h5>
+          <h3>Product Name : {data.name}</h3>
+          <h5>Price : {data.price} USD</h5>
           <div>
-            select sizes
-            {data?.size?.map((e) => {
+            select sizes : 
+             {data?.size?.map((e) => {
               return (
                 <button key={e} onClick={() => setSize(e)}>
                   {e}

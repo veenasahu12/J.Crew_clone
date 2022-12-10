@@ -47,10 +47,11 @@ const MenDetails = (props) => {
       <div className="maindiv">
         <hr />
         <div className="women-details-img">
-          <img className="images" src={data.img_url} alt="men" />
+          <img className="image" src={data.img_url} alt="men" />
         </div>
         <div className="women-category1">
-          <h5>{data.price} USD</h5>
+        <h3>Product Name : {data.name}</h3>
+          <h5>Price : {data.price} USD</h5>
           <div>
             select sizes
             {data?.size?.map((e) => {
