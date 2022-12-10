@@ -1,17 +1,15 @@
-import React from "react";
+import React , { useEffect , useState } from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
 import Navbar from "../Landing/Navbar";
-import "./Product.css";
 import Footer from "../Landing/Footer";
 import { Link } from "react-router-dom";
 
-const Men = (props) => {
+const kids = (props) => {
   const [data, setData] = useState([]);
-  
+
   useEffect(() => {
     axios
-      .get("https://api.jsonbin.io/v3/b/63930d276a51bc4f704b1fcf")
+      .get("https://api.jsonbin.io/v3/b/63941e99962da34f538bfa9e")
       .then(({ data }) => {
         // console.log(data);
         setData(data);
@@ -41,4 +39,4 @@ const Men = (props) => {
   );
 };
 
-export default Men;
+export default kids;

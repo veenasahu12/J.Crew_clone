@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../Landing/Navbar";
 import "./Product.css";
 
-const WomenDetails = (props) => {
+const KidsDetails = (props) => {
   const params = useParams();
   const [size, setSize] = useState("");
   const [data, setData] = useState([]);
@@ -14,7 +14,7 @@ const WomenDetails = (props) => {
 
   useEffect(() => {
     axios({
-      url: `https://api.jsonbin.io/v3/b/63930852962da34f538b54aa`,
+      url: `https://api.jsonbin.io/v3/b/63941e99962da34f538bfa9e`,
       method: "GET",
     }).then((r) => {
       // console.log(r);
@@ -37,6 +37,7 @@ const WomenDetails = (props) => {
       alert("please select size");
     }
   };
+
   return (
     <div>
       <Navbar />
@@ -44,7 +45,7 @@ const WomenDetails = (props) => {
       <div className="maindiv">
         <hr />
         <div className="women-details-img">
-          <img className="images" src={data.img_url} alt="women" />
+          <img className="images" src={data.img_url} alt="men" />
         </div>
         <div className="women-category1">
           <h5>{data.price} USD</h5>
@@ -85,4 +86,4 @@ const WomenDetails = (props) => {
   );
 };
 
-export default WomenDetails;
+export default KidsDetails;

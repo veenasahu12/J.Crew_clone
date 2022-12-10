@@ -24,7 +24,7 @@ const SignUpModal = ({ setIsOpensignup }) => {
     
       const handleSubmit = (e) => {
         console.log(form)
-        axios.post("https://my-jcrew-api.herokuapp.com/users",
+        axios.post("https://api.jsonbin.io/v3/b/63930f3d962da34f538b5b2a",
          form
         )
         .then((r) => {
