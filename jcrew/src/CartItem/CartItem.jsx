@@ -1,9 +1,9 @@
-import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Navbar from "../Pages/Landing/Navbar";
 import "./CartItem.css";
+import Footer from '../Pages/Landing/Footer'
 
 const CartItem = (props) => {
   const [data, setData] = useState();
@@ -87,6 +87,7 @@ const CartItem = (props) => {
           <button>APPLY</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
