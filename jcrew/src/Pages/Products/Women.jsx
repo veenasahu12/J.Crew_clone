@@ -99,7 +99,7 @@ const Women = (props) => {
         {data?.record?.map((e) => {
           return (
             <Link key={e.id} className="data-item" to={`${e.id}`}>
-              <img src={e.img_url} className="image" alt="missing" />
+              <img src={e.img_url} className="images" alt="missing" />
               <h6>{e.name}</h6>
               <h6>{e.new}</h6>
               <h6>{e.top_rated}</h6>
