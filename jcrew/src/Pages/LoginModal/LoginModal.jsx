@@ -52,7 +52,7 @@ const LoginModal = ({ setIsOpen }) => {
     };
 
     useEffect(()=>{
-      axios.get("https://api.jsonbin.io/v3/b/63930f3d962da34f538b5b2a")
+      axios.get("https://api.jsonbin.io/v3/b/63943e56962da34f538c0ad0")
       .then((r)=> {
       // console.log(r.data)
            setUsers(r.data)

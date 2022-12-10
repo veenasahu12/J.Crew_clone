@@ -10,7 +10,7 @@ const Women = (props) => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://api.jsonbin.io/v3/b/63930852962da34f538b54aa")
+      .get("https://api.jsonbin.io/v3/b/63943cf7962da34f538c0a20")
       .then(({ data }) => {
         //    console.log(data.record);
         setData(data);

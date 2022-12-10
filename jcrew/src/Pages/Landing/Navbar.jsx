@@ -22,7 +22,7 @@ const Navbar = (props) => {
         <Link to="/men" className="link">
           Men
         </Link>
-        <Link to="/kids" className="link">
+        <Link to="/Kids" className="link">
           Kids
         </Link>
         <Link to="/swim" className="link">

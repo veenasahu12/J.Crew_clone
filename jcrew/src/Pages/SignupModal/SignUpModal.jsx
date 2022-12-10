@@ -24,7 +24,7 @@ const SignUpModal = ({ setIsOpensignup }) => {
     
       const handleSubmit = (e) => {
         console.log(form)
-        axios.post("https://api.jsonbin.io/v3/b/63930f3d962da34f538b5b2a",
+        axios.post("https://api.jsonbin.io/v3/b/63943e56962da34f538c0ad0",
          form
         )
         .then((r) => {

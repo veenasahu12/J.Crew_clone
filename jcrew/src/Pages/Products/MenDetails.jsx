@@ -16,7 +16,7 @@ const MenDetails = (props) => {
 
   useEffect(() => {
     axios({
-      url: `https://api.jsonbin.io/v3/b/63930d276a51bc4f704b1fcf`,
+      url: `https://api.jsonbin.io/v3/b/63943ddbc5b3a64f1bc7f7cb`,
       method: "GET",
     }).then((r) => {
       // console.log(r);
@@ -24,7 +24,7 @@ const MenDetails = (props) => {
       // console.log(find)
       setData(find);
     });
-  });
+  },[setData]);
 
   const addtocart = () => {
     if (size) {
