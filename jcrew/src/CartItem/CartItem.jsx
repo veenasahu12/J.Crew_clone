@@ -19,9 +19,7 @@ const CartItem = (props) => {
 
   const remove = (id) => {
         const deleteitem = JSON.parse(localStorage.getItem('dataKey'));
-        // console.log(deleteitem);
         const filteritem = deleteitem.filter(a=>a.id != id)
-        // console.log(filteritem);
         localStorage.setItem('dataKey', JSON.stringify(filteritem));
         setData(filteritem);
         alert("Item Removed successfully");
