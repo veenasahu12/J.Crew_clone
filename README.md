@@ -23,4 +23,4 @@ J.Crew is an E-Commerce Website offering an assortment of Women's , Men's and Ki
 
 ### Netlify Link
 
-https://jcrew.netlify.app/
+https://jcrew12.netlify.app/
