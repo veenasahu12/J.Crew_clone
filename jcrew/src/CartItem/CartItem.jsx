@@ -8,6 +8,7 @@ import Footer from '../Pages/Landing/Footer'
 
 const CartItem = (props) => {
   const [data, setData] = useState();
+  const [value , setValue] = useState("");
   const navigate= useNavigate()
 
   useEffect(() => {
@@ -38,6 +39,29 @@ const CartItem = (props) => {
     alert("Procceding to checkout")
     navigate("/checkout");
 }
+
+let promo_price = 0;
+if(value == "masai30"){
+    promo_price = total * 0.2;
+}
+// console.log(promo_price, "promo_price")
+
+let Estimated_price = 0;
+if(promo_price > 0){
+  Estimated_price = total - promo_price;
+}
+// console.log(Estimated_price,"Estimated_price")
+
+const applypromo = () => {
+    // console.log(value,"value")
+    if(value == "masai30"){
+      alert("Promo code is Applied");
+    }
+    else {
+      alert("Please enter valid promo code!");
+  }
+}
+
 
   return (
     <div>
@@ -79,11 +103,12 @@ const CartItem = (props) => {
           </div>
         </div>
         <div className="box2">
-          <h6>Item Subtotal :  ${total}</h6>
-          <h5>Estimated Total : ${total}</h5>
-          <p className="ptag">Shipping calculated In Checkout</p>
+          <h6>Item Subtotal :  INR {total}</h6>
+          <h5>Disount : -{promo_price}</h5>
+          <h5>Estimated Total : INR {Estimated_price}</h5>
+          {/* <p className="ptag">Shipping calculated In Checkout</p> */}
 
-          <button className="checkoutbtn" onClick={handleProceedCheckout}  >CHECK OUT NOW</button>
+          <button className="checkoutbtn" onClick={handleProceedCheckout}>CHECK OUT NOW</button>
           <br />
           <br />
           <p className="ptag">
@@ -95,8 +120,11 @@ const CartItem = (props) => {
 
           <hr />
           <h5>Add Promo</h5>
-          <input placeholder="Promo" />
-          <button>APPLY</button>
+          <input placeholder="Promo" 
+             value={value}
+             onChange={(e) => setValue(e.target.value)}
+          />
+          <button onClick={applypromo}>APPLY</button>
         </div>
       </div>
       <br />
