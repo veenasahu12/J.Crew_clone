@@ -11,10 +11,12 @@ J.Crew is an E-Commerce Website offering an assortment of Women's , Men's and Ki
   - `JavaScript ES6`
   - `React`
   - `Redux`
+  - `localStorage`
   - `Chakra-UI`
 
 #### CSS frameworks
   - `BootStrap`
+  - `Material-UI`
   
 ### Snapshot :-
 <img src="https://cdn-images-1.medium.com/max/880/1*V6HU-753YQsz49px0mZeQw.png" />
