@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Landing/Navbar";
+import Footer from "../Landing/Footer";
 import "./Product.css";
 
 const WomenDetails = (props) => {
@@ -49,8 +50,8 @@ const WomenDetails = (props) => {
         <div className="women-category1">
           <h3>Product Name : {data.name}</h3>
           <h5>Price : {data.price} USD</h5>
-          <div>
-            select sizes : 
+          <div >
+            select sizes :  
              {data?.size?.map((e) => {
               return (
                 <button key={e} onClick={() => setSize(e)}>
@@ -59,7 +60,8 @@ const WomenDetails = (props) => {
               );
             })}
           </div>
-          <select onChange={(e) => setCount(e.target.value)}>
+          <br />
+          <select className="selectbtn" onChange={(e) => setCount(e.target.value)}>
             {[1, 2, 3, 4, 5].map((e) => {
               return (
                 <option key={e} value={e}>
@@ -68,11 +70,13 @@ const WomenDetails = (props) => {
               );
             })}
           </select>
+          <br />
+          <br />
           <div className="Add-to-cart-div">
-            <button className="add-to-cart" onClick={addtocart}>
+            <button className="selectbtn" onClick={addtocart}>
               Add to Bag
             </button>
-            <button className="add-to-wish">Add to Wishlist</button>
+            <button className="selectbtn">Add to Wishlist</button>
           </div>
           <div className="Add-to-cart-div2">
             <p className="p1">Fit Predictor</p>
@@ -82,6 +86,9 @@ const WomenDetails = (props) => {
           <p className="p4">India : Free shipping on orders over $500 USD</p>
         </div>
       </div>
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 };

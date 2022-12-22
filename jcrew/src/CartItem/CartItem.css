@@ -39,9 +39,8 @@
     gap: 5%;
     margin-top: 3%;
 }
-.btn{
-    margin-top: 3%;
-    margin-left: 4%;
+.btns{
+    margin: 4%;
 }
 .maindiv{
     display: flex;

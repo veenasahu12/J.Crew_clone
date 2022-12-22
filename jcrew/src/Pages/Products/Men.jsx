@@ -100,11 +100,11 @@ const Men = (props) => {
           return (
             <Link key={e.id} className="data-item" to={`${e.id}`}>
               <img src={e.img_url} className="images" alt="missing" />
-              <h6>{e.name}</h6>
+              <h6 className="name">{e.name}</h6>
               <h6>{e.new}</h6>
               <h6>{e.top_rated}</h6>
-              <h6>INR {e.price}</h6>
-              <button>Add to Details</button>
+              <h6>Price : INR {e.price}</h6>
+              <button className="btn">Add to Details</button>
             </Link>
           );
         })}

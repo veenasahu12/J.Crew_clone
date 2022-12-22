@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Landing/Navbar";
+import Footer from "../Landing/Footer";
 import "./Product.css";
 
 const MenDetails = (props) => {
@@ -30,7 +31,7 @@ const MenDetails = (props) => {
     if (size) {
       var object = { ...data, size: size, count: count };
       const getItem = JSON.parse(localStorage.getItem("dataKey")) || [];
-      console.log(getItem);
+      // console.log(getItem);
       getItem.push(object);
       localStorage.setItem("dataKey", JSON.stringify(getItem));
       // console.log(items);
@@ -62,6 +63,7 @@ const MenDetails = (props) => {
               );
             })}
           </div>
+          <br />
           <select onChange={(e) => setCount(e.target.value)}>
             {[1, 2, 3, 4, 5].map((e) => {
               return (
@@ -71,11 +73,13 @@ const MenDetails = (props) => {
               );
             })}
           </select>
+          <br />
+          <br />
           <div className="Add-to-cart-div">
-            <button className="add-to-cart" onClick={addtocart}>
+            <button className="selectbtn" onClick={addtocart}>
               Add to Bag
             </button>
-            <button className="add-to-wish">Add to Wishlist</button>
+            <button className="selectbtn">Add to Wishlist</button>
           </div>
           <div className="Add-to-cart-div2">
             <p className="p1">Fit Predictor</p>
@@ -85,6 +89,8 @@ const MenDetails = (props) => {
           <p className="p4">India : Free shipping on orders over $500 USD</p>
         </div>
       </div>
+      <br />
+      <Footer />
     </div>
   );
 };

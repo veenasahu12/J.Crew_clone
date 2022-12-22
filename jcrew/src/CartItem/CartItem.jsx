@@ -2,20 +2,28 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Navbar from "../Pages/Landing/Navbar";
+import { useNavigate } from "react-router-dom";
 import "./CartItem.css";
 import Footer from '../Pages/Landing/Footer'
 
 const CartItem = (props) => {
   const [data, setData] = useState();
+  const navigate= useNavigate()
 
   useEffect(() => {
     getdata();
   }, []);
+
   const getdata = () => {
     const data = JSON.parse(localStorage.getItem('dataKey'));
-    console.log(data)
+    // console.log(data)
     setData(data);
   };
+
+  const totalPrice = JSON.parse(localStorage.getItem('dataKey'));
+  // console.log("totalPrice",totalPrice)
+  const total = totalPrice.reduce((a, c) => a + Number(c.count) * Number(c.price), 0);
+  // console.log(total,"total")
 
   const remove = (id) => {
         const deleteitem = JSON.parse(localStorage.getItem('dataKey'));
@@ -25,6 +33,12 @@ const CartItem = (props) => {
         alert("Item Removed successfully");
         getdata();
   };
+
+  const handleProceedCheckout=()=>{
+    alert("Procceding to checkout")
+    navigate("/checkout");
+}
+
   return (
     <div>
       <Navbar />
@@ -54,7 +68,7 @@ const CartItem = (props) => {
                         <h6>Qty : {e.count}</h6>
                         <h6>PRICE : INR {e.price}</h6>
                       </div>
-                      <div className="btn">
+                      <div className="btns">
                         <button onClick={() => remove(e.id)}>Remove</button>
                       </div>
                     </div>
@@ -65,11 +79,11 @@ const CartItem = (props) => {
           </div>
         </div>
         <div className="box2">
-          <h6>Item Subtotal </h6>
-          <h5>Estimated Total</h5>
+          <h6>Item Subtotal :  ${total}</h6>
+          <h5>Estimated Total : ${total}</h5>
           <p className="ptag">Shipping calculated In Checkout</p>
 
-          <button className="checkoutbtn">CHECK OUT NOW</button>
+          <button className="checkoutbtn" onClick={handleProceedCheckout}  >CHECK OUT NOW</button>
           <br />
           <br />
           <p className="ptag">
@@ -85,6 +99,7 @@ const CartItem = (props) => {
           <button>APPLY</button>
         </div>
       </div>
+      <br />
       <Footer />
     </div>
   );

@@ -45,6 +45,17 @@
     font-weight: bold;
     font-style: italic;
 }
+.selectbtn{
+    background-color: rgb(100, 100, 240);
+    color: white;
+}
+.selectbtn:hover {
+    color: #fff;
+    background-color: rgb(230, 60, 60);
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
 .product-menu-dropdown-div{
     margin-left: -70%;
     margin-bottom: 3%;
@@ -65,7 +76,28 @@
     width: 90px;
     margin-top: 1%;
 }
+.name{
+    margin-top: 6%;
+    font-size: 25px;
+}
 
+.btn{
+    margin-bottom: 2%;
+    background-color: blue;
+    color: white;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: rgb(230, 60, 60);
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+} 
+
+.Add-to-cart-div{
+    margin-left: 2%;
+}
 @media only screen and (min-width:0px) and (max-width:820px) {
     .mapping-data {
         grid-template-columns: 1fr ;
