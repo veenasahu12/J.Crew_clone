@@ -19,24 +19,25 @@ const Women = (props) => {
 
   const handleSort = (e) => {
     // console.log(e.target.value);
+    // console.log(data)
     if (e.target.value === "Low" || e.target.value === "High") {
-      let data2 = data.sort((a, b) => {
+      var data2 = data?.record?.sort((a, b) => {
         if (e.target.value === "Low") {
           return Number(a.price) - Number(b.price);
         } else if (e.target.value === "High") {
           return b.price - a.price;
         }
       });
-      // console.log(data2)
-      setData([...data2]);
+      // console.log(data2);
+      // setData([{...data2}]);
     } else if (e.target.value === "TOP RATED") {
-      let data2 = data.filter((a) => {
-        //   console.log(a.top_rated,e.target.value)
+      let data2 = data?.record?.filter((a) => {
+        // console.log(a.top_rated, e.target.value);
         return a.top_rated === e.target.value;
       });
       setData([...data2]);
     } else if (e.target.value === "NEW") {
-      let data2 = data.filter((a) => {
+      let data2 = data?.record?.filter((a) => {
         // console.log(a.new,e.target.value)
         return a.new === e.target.value;
       });
@@ -104,7 +105,7 @@ const Women = (props) => {
               <h6>{e.new}</h6>
               <h6>{e.top_rated}</h6>
               <h6>INR {e.price}</h6>
-              <button className="btn" >Add To Details</button>
+              <button className="btn">Add To Details</button>
             </Link>
           );
         })}

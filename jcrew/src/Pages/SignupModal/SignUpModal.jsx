@@ -2,7 +2,7 @@ import {React,useState} from "react";
 import styles from "./SignUpModal.module.css";
 import { RiCloseLine } from "react-icons/ri";
 import LoginModal from "../LoginModal/LoginModal";
-import axios from "axios";
+// import axios from "axios";
 
 const SignUpModal = ({ setIsOpensignup }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,20 +22,24 @@ const SignUpModal = ({ setIsOpensignup }) => {
         })
       }
     
-      const handleSubmit = (e) => {
-        console.log(form)
-        axios.post("https://api.jsonbin.io/v3/b/63943e56962da34f538c0ad0",
-         form
-        )
-        .then((r) => {
-          alert("SUCCESS");
-          // console.log(r)
-        })
-        .catch((err) => {
-          // console.log(err.message)
-          alert("Error");
-        })
-      };
+      const handleSubmit = () => {
+        // console.log(form)
+        localStorage.setItem("signUp",JSON.stringify(form));
+        alert("Acount Is Created Successfully");
+      }
+      // const handleSubmit = (e) => {
+      //   axios.post("https://api.jsonbin.io/v3/b/63943e56962da34f538c0ad0",
+      //    form
+      //   )
+      //   .then((r) => {
+      //     alert("SUCCESS");
+      //     console.log(r)
+      //   })
+      //   .catch((err) => {
+      //     console.log(err.message)
+      //     alert("Error");
+      //   })
+      // };
     
   return (
     <>
