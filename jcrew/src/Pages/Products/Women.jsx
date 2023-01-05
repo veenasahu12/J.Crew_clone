@@ -29,7 +29,7 @@ const Women = (props) => {
         }
       });
       // console.log(data2);
-      // setData([{...data2}]);
+      setData([{...data2}]);
     } else if (e.target.value === "TOP RATED") {
       let data2 = data?.record?.filter((a) => {
         // console.log(a.top_rated, e.target.value);
